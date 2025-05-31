@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INMEDIA TRADE Ltd - The Advisor for Your Business</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -13,16 +13,31 @@
         <nav class="navbar">
             <div class="container">
                 <a href="#home" class="logo">
-                    <img src="images/inmedia-trade-logo.png" alt="INMEDIA TRADE Logo" class="logo-img">
+                    <img src="images/inmedia-trade-logo-light.png" alt="INMEDIA TRADE Logo" class="logo-img">
                     <span class="logo-text">INMEDIA TRADE</span>
                 </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#activities">Activities</a></li>
+                    <li class="dropdown">
+                        <a href="#activities">Activities <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#trading">Trading</a>
+                            <a href="#business-development">Business Dev.</a>
+                            <a href="#master-contractor">Master Contractor</a>
+                            <a href="#marketing">Mktg. & Comm.</a>
+                            <a href="#event-organization">Event Org.</a>
+                        </div>
+                    </li>
                     <li><a href="#partners">Partners</a></li>
-                    <li><a href="#commodities">Commodities</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#commodities">Commodities <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#oil-commodities">Oil</a>
+                            <a href="#gold-refinery">Gold Refinery</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact" class="btn btn-nav-cta">Contact Us</a></li>
                 </ul>
                 <div class="hamburger">
                     <i class="fas fa-bars"></i>
@@ -34,145 +49,92 @@
     <main>
         <section id="home" class="hero-section">
             <div class="container">
-                <h1>The Advisor for Your Business.</h1>
-                <p>Empowering global trade and strategic growth with unparalleled expertise.</p>
-                <a href="#activities" class="btn btn-primary">Discover Our Solutions</a>
+                <p class="hero-tagline animate-fade-in">INNOVATION & INTEGRITY</p>
+                <h1 class="animate-slide-up">The Advisor for Your Business.</h1>
+                <p class="hero-description animate-fade-in-late">Empowering global trade and strategic growth with unparalleled expertise and a commitment to excellence.</p>
+                <a href="#activities" class="btn btn-primary animate-scale-in">Explore Our Solutions <i class="fas fa-arrow-right icon-after"></i></a>
             </div>
         </section>
 
-        <section id="about" class="about-us-section">
+        <section id="about" class="about-us-section section-padded">
             <div class="container">
-                <h2 class="section-title">ABOUT US</h2>
+                <h2 class="section-title animate-in">ABOUT US</h2>
                 <div class="about-content">
-                    <div class="about-text">
-                        <p>Inmedia Trade Ltd, based in the UK, is a company formed by the union of international trader and marketing experts, business consultants with decades of experience, and professionals in sport and promotional event organization.</p>
-                        <p>Our corporate structure features a dynamic organizational chart that adapts to client demands and needs. Inmedia Trade integrates specialized consultants, each with a minimum of 20 years of experience, and world-class partner companies to guarantee top-level services.</p>
-                        <p>Our working model is both direct operational and, when required, a ghost model for service delivery.</p>
+                    <div class="about-image animate-in-left">
+                        <img src="images/diverse-business-collaboration.jpg" alt="Diverse Business Team Collaborating">
                     </div>
-                    <div class="about-image">
-                        <img src="images/business-meeting.jpg" alt="Professional Business Meeting">
+                    <div class="about-text animate-in-right">
+                        <p>Inmedia Trade Ltd, based in the UK, is a dynamic company formed by the synergy of international trade and marketing experts, seasoned business consultants, and accomplished professionals in sports and promotional event organization. With decades of combined experience, our team brings a wealth of knowledge to every client interaction.</p>
+                        <p>Our corporate structure is designed for agility, featuring a flexible organizational chart that seamlessly adapts to client demands and evolving market needs. We pride ourselves on integrating specialized consultants, each boasting a minimum of 20 years of hands-on experience, and partnering with world-class companies to ensure the delivery of top-tier services.</p>
+                        <p>Whether operating directly as your strategic partner or adopting a 'ghost model' for discreet service delivery, our commitment remains unwavering: to provide impactful solutions that drive your business forward.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="activities" class="activities-section">
+        <section id="activities" class="activities-section section-padded bg-light">
             <div class="container">
-                <h2 class="section-title">OUR ACTIVITIES</h2>
+                <h2 class="section-title animate-in">OUR CORE ACTIVITIES</h2>
                 <div class="activities-grid">
-                    <div class="activity-item">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>1. TRADING</h3>
-                        <ul>
-                            <li>Consulting services in international trading</li>
-                            <li>Commodities and soft-commodities trading selection</li>
-                            <li>Seller and Buyer facilitation and documentary supporting</li>
-                            <li>Financial instruments management</li>
-                            <li>Trading, sales and delivery support</li>
-                            <li>New markets opening</li>
-                        </ul>
+                    <div class="activity-item animate-in-bottom" id="trading">
+                        <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
+                        <h3>TRADING</h3>
+                        <p>Expert consulting, commodity selection, buyer/seller facilitation, financial instruments, and new market entry support.</p>
+                        <a href="#" class="read-more-btn">Learn More <i class="fas fa-arrow-right icon-after"></i></a>
                     </div>
-                    <div class="activity-item">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>2. BUSINESS DEVELOPMENT</h3>
-                        <ul>
-                            <li>New business and start-up management</li>
-                            <li>Creation of new investment projects</li>
-                            <li>Investor search and contract management</li>
-                            <li>Initiation of commercialization processes</li>
-                            <li>Supporting the launch of new start-ups</li>
-                        </ul>
+                    <div class="activity-item animate-in-bottom" id="business-development">
+                        <div class="icon-circle"><i class="fas fa-lightbulb"></i></div>
+                        <h3>BUSINESS DEVELOPMENT</h3>
+                        <p>New business & start-up management, investment project creation, investor search, and commercialization.</p>
+                        <a href="#" class="read-more-btn">Learn More <i class="fas fa-arrow-right icon-after"></i></a>
                     </div>
-                    <div class="activity-item">
-                        <i class="fas fa-hard-hat"></i>
-                        <h3>2. MASTER CONTRACTOR</h3>
-                        <h4>General Contractor Service</h4>
-                        <ul>
-                            <li>Commercial rights management and sales</li>
-                            <li>Stockholders' selection and relationship management</li>
-                            <li>Business model designer</li>
-                            <li>Budget definition and allocation</li>
-                            <li>ROI and investments management</li>
-                        </ul>
-                        <h4>Master Planner</h4>
-                        <ul>
-                            <li>Master plan creation and management</li>
-                            <li>Application/bidding process documents creation</li>
-                            <li>Bidding process negotiation</li>
-                            <li>Selection and negotiation with services suppliers</li>
-                        </ul>
+                    <div class="activity-item animate-in-bottom" id="master-contractor">
+                        <div class="icon-circle"><i class="fas fa-hard-hat"></i></div>
+                        <h3>MASTER CONTRACTOR</h3>
+                        <p>General contractor services, master planning, stakeholder relations, and supplier negotiation.</p>
+                        <a href="#" class="read-more-btn">Learn More <i class="fas fa-arrow-right icon-after"></i></a>
                     </div>
-                    <div class="activity-item">
-                        <i class="fas fa-bullhorn"></i>
-                        <h3>3. MARKETING AND COMMUNICATION</h3>
-                        <h4>Marketing Consulting Services</h4>
-                        <ul>
-                            <li>Brand awareness generation and brand protection</li>
-                            <li>Stakeholder engagement systems</li>
-                            <li>Co-marketing, loyalty and royalty strategies</li>
-                        </ul>
-                        <h4>Promo-Advertising Campaigns Management</h4>
-                        <ul>
-                            <li>Strategy definition and production and creativity</li>
-                            <li>Budget definition, management and media distribution planning</li>
-                            <li>Events design and delivery</li>
-                        </ul>
-                        <h4>Market Analysis</h4>
-                        <ul>
-                            <li>Audience monitoring and measurement</li>
-                            <li>Audience connecting</li>
-                        </ul>
+                    <div class="activity-item animate-in-bottom" id="marketing">
+                        <div class="icon-circle"><i class="fas fa-bullhorn"></i></div>
+                        <h3>MARKETING & COMMUNICATION</h3>
+                        <p>Brand awareness, stakeholder engagement, promo campaigns, and in-depth market analysis.</p>
+                        <a href="#" class="read-more-btn">Learn More <i class="fas fa-arrow-right icon-after"></i></a>
                     </div>
-                    <div class="activity-item">
-                        <i class="fas fa-calendar-alt"></i>
-                        <h3>4. EVENT ORGANIZATION</h3>
-                        <h4>Organization of Corporate Events</h4>
-                        <ul>
-                            <li>International conventions and corporate events organizer</li>
-                            <li>Hospitality and VIP management, PR and press office support</li>
-                            <li>Promotional Events design and delivery</li>
-                        </ul>
-                        <h4>Organization of Sporting Events</h4>
-                        <ul>
-                            <li>International competition and world-class events organizer</li>
-                            <li>World championships events promotion</li>
-                            <li>International Sport Federation (ISFs) relationship management</li>
-                            <li>Management of guidelines and international rules and protocols</li>
-                        </ul>
+                    <div class="activity-item animate-in-bottom" id="event-organization">
+                        <div class="icon-circle"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>EVENT ORGANIZATION</h3>
+                        <p>Seamless organization of corporate events, international conventions, and world-class sporting events.</p>
+                        <a href="#" class="read-more-btn">Learn More <i class="fas fa-arrow-right icon-after"></i></a>
                     </div>
                 </div>
-            </div>
+                </div>
         </section>
 
-        <section id="partners" class="partners-section bg-light">
+        <section id="partners" class="partners-section section-padded">
             <div class="container">
-                <h2 class="section-title">STRATEGIC PARTNERS</h2>
+                <h2 class="section-title animate-in">STRATEGIC PARTNERS</h2>
                 <div class="partners-grid">
-                    <div class="partner-item">
+                    <div class="partner-card animate-in-bottom">
                         <img src="images/castelburg-logo.png" alt="Castelburg Industries Logo" class="partner-logo">
                         <h3>CASTELBURG INDUSTRIES GmbH</h3>
-                        <p>Schwefel 93/ A-6850 Dornbirn, AUSTRIA</p>
-                        <p>Specializing in Finance and Commodities, Gold Refinery.</p>
-                        <p>INMEDIA TRADE Ltd is proud to announce its exclusive joint venture with CASTELBURG INDUSTRIES GmbH, a world-class Austrian company with over 30 years of experience in supporting industrial projects and global commodity trading.</p>
-                        <p>Through this strategic alliance, CASTELBURG INDUSTRIES GmbH brings unparalleled expertise in: Issuance of Letters of Credit and structured trade finance instruments, financial support for complex transactions and supply chains, and financial partnership in the managerial engineering of funds and economic flows.</p>
-                        <p>Together, we deliver not only commodities — but confidence, continuity, and capital.</p>
+                        <p class="partner-location">Schwefel 93/ A-6850 Dornbirn, AUSTRIA</p>
+                        <p class="partner-description">Exclusive joint venture for Finance and Commodities, including Gold Refinery. Decades of experience in industrial projects and global commodity trading.</p>
+                        <p class="partner-focus">Issuance of LCs, financial support, managerial engineering of funds.</p>
                     </div>
-                    <div class="partner-item">
+                    <div class="partner-card animate-in-bottom">
                         <img src="images/activa-san-agustin-logo.png" alt="Activa San Agustin Logo" class="partner-logo">
                         <h3>ACTIVA SAN AGUSTIN S.L.</h3>
-                        <p>Zona Franca de Seville, SPAIN</p>
-                        <p>INMEDIA TRADE boasts as Trader the exclusive JV with ACTIVA SAN AGUSTIN GOLD REFINERY, a Spanish-based company specialized in the refining of raw gold and the trading of bullion. With a strong commitment to transparency, quality, and compliance, we operate as a trusted player in the international precious metals market.</p>
+                        <p class="partner-location">Zona Franca de Seville, SPAIN</p>
+                        <p class="partner-description">Exclusive JV for Gold Refinery, specializing in refining raw gold and trading bullion with a strong commitment to transparency and compliance.</p>
+                        <p class="partner-focus">High-purity bullion, ethical sourcing, wholesale trading.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="commodities" class="commodities-section">
+        <section id="commodities" class="commodities-overview section-padded bg-light">
             <div class="container">
-                <h2 class="section-title">OIL COMMODITIES</h2>
-                <p class="section-intro">Inmedia Trade is a premier global trading company specializing in the procurement, trading, and distribution of crude oil and its derivatives. With a strong commitment to efficiency, transparency, and market adaptability, we provide businesses with seamless access to top-quality petroleum products. Our expertise spans global markets, ensuring reliable and strategic trade solutions for our partners.</p>
+                <h2 class="section-title animate-in">GLOBAL COMMODITIES</h2>
+                <p class="section-intro animate-in">INMEDIA TRADE is a premier global trading company specializing in the procurement, trading, and distribution of essential commodities, ensuring seamless access and strategic trade solutions.</p>
 
-                <h3 class="subsection-title">Our Vision</h3>
-                <p class="vision-text">At Inmedia Trade we aim to be a leader in the crude oil and derivatives sector by delivering unparalleled service, maintaining a robust supply chain, and promoting responsible energy trade. We focus on building long-term partnerships based on trust, reliability, and excellence.</p>
-
-                <div class="oil-commodities-grid">
+                <div class="commodity-tabs">
